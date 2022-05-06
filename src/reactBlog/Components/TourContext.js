@@ -11,15 +11,15 @@ const TourDetails = (props) =>{
     let [Food,setFood]=useState([])
 
     useEffect(()=>{
-        axios.get("http://localhost:5000/api/v1/tourism").then((res)=>{setTourist(res.data) })
+        axios.get("https://reactblogbackendserver.herokuapp.com/api/v1/tourism").then((res)=>{setTourist(res.data) })
      
-         axios.get("http://localhost:5000/api/v1/fitness").then((res)=>{setFitness(res.data)})
+         axios.get("https://reactblogbackendserver.herokuapp.com/api/v1/fitness").then((res)=>{setFitness(res.data)})
  
-         axios.get("http://localhost:5000/api/v1/technology").then((res)=>{ setTechnology(res.data)})
+         axios.get("https://reactblogbackendserver.herokuapp.com/api/v1/technology").then((res)=>{ setTechnology(res.data)})
  
-         axios.get("http://localhost:5000/api/v1/bollywood").then((res)=>{ setBollywood(res.data)})
+         axios.get("https://reactblogbackendserver.herokuapp.com/api/v1/bollywood").then((res)=>{ setBollywood(res.data)})
  
-         axios.get("http://localhost:5000/api/v1/food").then((res)=>{ setFood(res.data)})
+         axios.get("https://reactblogbackendserver.herokuapp.com/api/v1/food").then((res)=>{ setFood(res.data)})
      }, [])
 
 return (
